@@ -5,6 +5,7 @@ int main()
 {
     string s,t;
     cin>>s>>t;
-    cout<<s.find(t);
+    if(s.find(t)!=-1)cout<<s.find(t);
+    else cout<<"-1";
 
 }
