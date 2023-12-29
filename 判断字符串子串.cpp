@@ -6,9 +6,6 @@ int main()
 	string ss,s;
 	getline(cin,ss);
 	getline(cin,s);
-	int n;
-	cin>>n;
-	ss.insert(n,s);
-	cout<<ss;
+	if(ss.find(s)==string::npos)cout<<"NO!";
+	else cout<<ss.find(s)+1;
 }
-
